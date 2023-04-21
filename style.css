@@ -42,12 +42,12 @@
   width: 56%;
   display: inline-block;
   flex-grow: 1;
-  outline:none;
+  outline: none;
 }
 
 .todo__tasks,
 .complete__tasks {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .content__input{
-  display:none;
+  display: none;
   width: 226px;
   vertical-align: middle;
 }
@@ -165,10 +165,10 @@
 /* Edit Task */
 
 .content__input_edit{
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .content__label_edit{
-  display:none;
+  display: none;
 }
