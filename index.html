@@ -24,15 +24,15 @@
 
   <main class="todo-list__content content">
 
-    <section id="topSectionForAddingElementToList" class="add-task">
-      <label for="new-task" class="add-task__label">Add Item</label>
-      <input id="new-task" class="add-task__input" type="text">
-      <button id="addButton" class="add-task__button">Add</button>
+    <section class="add-task">
+      <label for="add-task__input" class="add-task__label">Add Item</label>
+      <input id="add-task__input" class="add-task__input" type="text">
+      <button id="add-task__button" class="add-task__button">Add</button>
     </section>
 
     <section class="content__todo todo">
       <h3 class="content__header">Todo</h3>
-      <ul id="incompleteTasks" class="todo__tasks">
+      <ul id="todo__tasks" class="todo__tasks">
         <li class="content__item">
           <input type="checkbox" class="content__checkbox">
           <label class="content__label">Pay Bills</label>
@@ -56,7 +56,7 @@
     
     <section class="content__complete complete">
       <h3 class="content__header">Completed</h3>
-      <ul id="completed-tasks" class="complete__tasks">
+      <ul id="complete__tasks" class="complete__tasks">
         <li class="content__item">
           <input type="checkbox" checked class="content__checkbox">
           <label class="content__label complete__label">See the Doctor</label>
