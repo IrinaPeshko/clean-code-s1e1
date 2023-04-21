@@ -1,10 +1,12 @@
 /* Basic Style */
 /* body */
+
 .todo-list {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -15,37 +17,40 @@
 .header__img {
   width: 100%;
 }
+
 .header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .header { 
     text-align: center;
   }
+
 }
+
 .todo-list__content {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .content__label,
 .content__input,
 .add-task__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
+  outline:none;
 }
+
 .todo__tasks,
 .complete__tasks {
   margin:0;
   padding: 0px;
 }
-.content__input,
-.content__checkbox,
-.add-task__input {
-  outline:none;
-}
+
 .content__button-edit,
 .content__button-delete,
 .add-task__button {
@@ -59,12 +64,15 @@
   outline:none;
   vertical-align: middle;
 }
+
 .content__button-edit:hover,
 .content__button-delete:hover,
 .add-task__button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .content__header,
 .add-task__label {
   color: #333;
@@ -75,6 +83,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
  .content__input,
  .add-task__input{
   margin: 0;
@@ -88,21 +97,25 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .content__input:focus,
 .add-task__input:focus {
   color: #333;
 }
 
 /* New Task */
+
 .add-task__label {
   display: block;
   margin: 0 0 20px;
 }
+
 .add-task__input {
   width: 83%;
 }
 
 /* Task list */
+
 .content__item {
   overflow: hidden;
   padding: 20px 0;
@@ -117,6 +130,7 @@
   margin: 0 10px;
   vertical-align: middle;
 }
+
 .content__label {
   padding-left: 10px;
   box-sizing: border-box;
@@ -124,27 +138,32 @@
   width: 226px;
   vertical-align: middle;
 }
+
 .content__input{
   display:none;
   width: 226px;
   vertical-align: middle;
 }
+
 .button-delete__img{
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button-delete__img:hover{
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 .complete__label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
+
 .content__input_edit{
   display:inline-block;
   width:224px
