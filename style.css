@@ -158,7 +158,7 @@
 /* Completed */
 
 .complete__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
@@ -166,7 +166,7 @@
 
 .content__input_edit{
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .content__label_edit{
