@@ -88,7 +88,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput = listItem.querySelector(".content__input");
     var label=listItem.querySelector("label");
     var editBtn = listItem.querySelector(".content__button-edit");
     // debugger
@@ -127,11 +127,12 @@ var deleteTask=function(){
 //Mark task completed
 var taskCompleted=function(){
   console.log("Complete Task...");
-
   //Append the task list item to the #complete__tasks
   var listItem = this.parentNode;
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
+  var label = listItem.querySelector(".content__label");
+  label.classList.add("complete__label");
 }
 
 
@@ -143,12 +144,15 @@ var taskIncomplete=function(){
   var listItem = this.parentNode;
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
+  var label = listItem.querySelector(".content__label");
+  label.classList.remove("complete__label");
 }
 
 
 
 var ajaxRequest=function(){
     console.log("AJAX Request");
+
 }
 
 //The glue to hold it all together.
@@ -163,9 +167,11 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
+    var checkBox = taskListItem.querySelector(".content__checkbox");
     var editButton = taskListItem.querySelector(".content__button-edit");
     var deleteButton = taskListItem.querySelector(".content__button-delete");
+
+
 
 
     //Bind editTask to edit button.
